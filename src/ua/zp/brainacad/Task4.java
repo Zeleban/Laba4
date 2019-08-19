@@ -9,15 +9,19 @@ package ua.zp.brainacad;
 public class Task4 {
     public static void main(String[] args) {
         int a = 1;
-        int i;
-        int b;
-        for (i = 1; a < 1000; i++) {
-            if (a < 1000) {
+        int i=1;
+        while (true) {
+            a *= i;
+            if (a<1000) {
+                System.out.println(a);
+                i++;
             } else {
-                System.out.println("Достигнут максимально возможный результат");
+                System.out.println("Достигнут максимально возможный результат.");
+                break;
+            }
+
         }
-            System.out.println(a = a * i);
-        }
+
     }
 }
 
